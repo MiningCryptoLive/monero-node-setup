@@ -2,7 +2,7 @@ sudo apt-get install -y git make g++ cmake libssl-dev libunbound-dev libboost-de
 cd /usr/local/src
 git clone https://github.com/monero-project/monero.git
 cd monero
-git checkout v0.18.3.4
+git checkout v0.18.4.5
 git submodule update --init
 USE_SINGLE_BUILDDIR=1 make -j$(nproc) release || USE_SINGLE_BUILDDIR=1 make -j1 release
 
